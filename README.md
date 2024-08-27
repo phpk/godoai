@@ -129,6 +129,7 @@ wails build
 - [ollama](https://ollama.com/)
 
 ## 💕 关联项目
+- [godoos](https://gitee.com/ruitao_admin/godoos)
 - [godooa](https://gitee.com/ruitao_admin/gdoa)
 - [gododb](https://gitee.com/ruitao_admin/gododb)
 
