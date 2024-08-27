@@ -1,0 +1,32 @@
+.code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: var(--font-size-xs);
+    background-color: #343541;
+    border-radius: 5px 5px 0 0;
+    margin-top: 5px;
+    color: #c9d1d9;
+
+    .code-header-copy {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        svg {
+            height: 14px;
+            width: 14px;
+        }
+    }
+}
+.code-body-area{
+    overflow-x: auto;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 5px;
+}

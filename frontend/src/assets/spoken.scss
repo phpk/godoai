@@ -1,0 +1,158 @@
+// .chat-bot {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+
+//   .messsage-area {
+//     flex-grow: 1; // 确保message-area占据尽可能多的空间
+//   }
+
+//   .input-area {
+//     display: flex; // 确保.input-area是flex容器
+//     align-items: center; // 垂直居中
+//     justify-content: center; // 水平居中
+//     padding: 1rem;
+//     position: sticky; // 使用sticky定位，保持在底部
+//     bottom: 0;
+//     width: 100%;
+//     background-color: inherit; // 确保背景色与父元素一致，避免滚动时出现视觉差异
+
+//     .input-panel {
+//       max-width: 1200px; // 或者根据需要设置其他最大宽度
+//       margin: 0 auto; // 自动左右外边距，使元素在水平方向上居中
+//       display: flex; // 确保.input-panel内部元素也能正确排列
+//       align-items: center; // 内部元素垂直居中
+//       justify-content: center; // 内部元素水平居中
+//       z-index: 9999;
+//     }
+//   }
+// }
+.chat-bot {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .messsage-area {
+      display: flex;
+      flex-direction: column;
+      /* 默认就是column，但明确写出以增强可读性 */
+      height: 100%;
+      /* 确保messsage-area占据其父元素的全部高度 */
+  }
+
+  .input-area {
+    display: flex; // 确保.input-area是flex容器
+    align-items: center; // 垂直居中
+    justify-content: center; // 水平居中
+    padding: 1rem;
+    margin:15px 0;
+    padding:0;
+    position: sticky; // 使用sticky定位，保持在底部
+    bottom: 0;
+    width: 100%; // 确保.input-area占据整个宽度
+
+    .input-panel {
+      margin: 5px auto; // 自动左右外边距，使元素在水平方向上居中
+    }
+  }
+}
+
+.user-message {
+  background-color: #f6f6fd;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.assitant-message {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.message {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+}
+
+.message-container {
+  padding-bottom: 120px;
+}
+
+.no-message-container {
+  margin:auto
+}
+
+
+.animation-recording {
+  cursor: pointer;
+}
+.loader1 {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  background: currentColor;
+  color: #4c5271;
+  box-sizing: border-box;
+  animation: animloader1 0.3s 0.3s linear infinite alternate;
+}
+
+.loader1::after,
+.loader1::before {
+  content: "";
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  box-sizing: border-box;
+  animation: animloader1 0.3s 0.45s linear infinite alternate;
+}
+.loader1::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader1 {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4px;
+  }
+}
+.loader2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #4c5271;
+  box-sizing: border-box;
+  animation: animloader2 1s linear infinite;
+}
+
+@keyframes animloader2 {
+  0% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+  25% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+  }
+  50% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+  }
+  75% {
+    box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+  100% {
+    box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+  }
+}

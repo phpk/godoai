@@ -1,0 +1,10 @@
+github.com/k2-fsa/sherpa-onnx-go v1.8.8 h1:LLaJr97oYDhFitkmt8HppTMHda/qTAU1p5nXjQV130I=
+github.com/k2-fsa/sherpa-onnx-go v1.8.8/go.mod h1:JEBDXFl5savR6cWxE/+wSodjG37XUAwQzewb9Qlcv5w=
+github.com/k2-fsa/sherpa-onnx-go-linux v1.10.17 h1:PvSd9RFyCGuZ4lNzjAADs18GudINox7H8SAu18sDBjE=
+github.com/k2-fsa/sherpa-onnx-go-linux v1.10.17/go.mod h1:lHZRU/WtBUJetJVPyXHg092diEWYyIEoaob+LMJKWvo=
+github.com/k2-fsa/sherpa-onnx-go-macos v1.10.17 h1:FiDkfgIXvlAEGpZFKWfCM2vucxBZIZkaGAu8myepfPI=
+github.com/k2-fsa/sherpa-onnx-go-macos v1.10.17/go.mod h1:o1Cd6Zy+Tpq3bLAWqBoVcDenxi8HSaSubURtbtIqH2s=
+github.com/k2-fsa/sherpa-onnx-go-windows v1.10.17 h1:8GozQ0+nwLDXI7wLD2Tr9B8mZxPRpRfyuV8ntMUI7Yk=
+github.com/k2-fsa/sherpa-onnx-go-windows v1.10.17/go.mod h1:R7JSrFkZGkfM/F/gVSR+yTJ+sPaHhJgdqsB5N7dTU6E=
+github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
+github.com/spf13/pflag v1.0.5/go.mod h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=
