@@ -49,6 +49,7 @@
 - ***跨平台，Windows、Linux、MacOS都可以安装，无需docker部署***
 
 ## 💖 开源地址
+- [Github](https://github.com/phpk/godoai)
 - [Gitee](https://gitee.com/ruitao_admin/godoai)
 
 
